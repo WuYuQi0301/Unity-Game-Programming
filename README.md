@@ -10,7 +10,12 @@
  - 使用带缓存的工厂模式管理不同飞碟的产生和回收，该工厂必须是场景单实例！使用Singleton模板类实现；
  尽可能使用MVC结构实现人机交互与游戏模型的分离
 
+心得：用a4打类图的草稿的时候，感觉自己在c++里学的面向对象设计都是假的...晚些更博。
+
 [My Blog : Unity HitUFO]{http://wuyq53.space/unity/2018/04/15/HitUFO/#}
 
 待我类图补充完整再来更个新....
 ![类图]{http://i2.bvimg.com/618639/c42481db2d60f2fd.png}
+
+录屏地址：  
+http://v.youku.com/v_show/id_XMzU0NTM5NjcwNA==.html?spm=a2h3j.8428770.3416059.1
