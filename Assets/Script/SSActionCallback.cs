@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SSActionCallback : MonoBehaviour {
+public enum SSActionEventType : int { Started, Competeted }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public interface ISSActionCallback
+{
+    void SSActionEvent(SSAction source, int intParam = 0, Object objectParam = null);
+
 }

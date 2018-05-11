@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolActionManager : MonoBehaviour {
+public class PatrolActionManager : SSActionManager
+{
+    private PatrolRoundAction round;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void PatrolRoundStart(GameObject patrol)
+    {
+        round = PatrolRoundAction.GetSSAction(patrol.transform.position);
+        this.RunAction(patrol, round, this);
+    }
+    //停止所有动作
+    public void DestroyAllAction()
+    {
+        DestroyAll();
+    }
 }

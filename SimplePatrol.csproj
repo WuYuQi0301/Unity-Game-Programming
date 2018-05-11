@@ -282,17 +282,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\AreaCollider.cs" />
-    <Compile Include="Assets\Script\FirstSceneController.cs" />
-    <Compile Include="Assets\Script\GoPatrolAction.cs" />
+    <Compile Include="Assets\Models\SD_Character\Scripts\SampleAnimation.cs" />
+    <Compile Include="Assets\Models\SD_Character\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\Models\SD_Character\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\Models\SD_Character\Scripts\SpringManager.cs" />
+    <Compile Include="Assets\Script\CameraFlow.cs" />
+    <Compile Include="Assets\Script\FirstController.cs" />
+    <Compile Include="Assets\Script\GameEventManager.cs" />
+    <Compile Include="Assets\Script\ISceneController.cs" />
+    <Compile Include="Assets\Script\IUserAction.cs" />
     <Compile Include="Assets\Script\PatrolActionManager.cs" />
     <Compile Include="Assets\Script\PatrolData.cs" />
+    <Compile Include="Assets\Script\PatrolEvent.cs" />
     <Compile Include="Assets\Script\PatrolFollowAction.cs" />
+    <Compile Include="Assets\Script\PatrolRoundAction.cs" />
+    <Compile Include="Assets\Script\PlayerEvent.cs" />
     <Compile Include="Assets\Script\PropFactory.cs" />
+    <Compile Include="Assets\Script\ScoreRecorder.cs" />
+    <Compile Include="Assets\Script\Singleton.cs" />
     <Compile Include="Assets\Script\SSAction.cs" />
     <Compile Include="Assets\Script\SSActionCallback.cs" />
     <Compile Include="Assets\Script\SSActionManager.cs" />
+    <Compile Include="Assets\Script\SSDirector.cs" />
+    <Compile Include="Assets\Script\UserAction.cs" />
     <Compile Include="Assets\Script\UserGUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Models\SD_Character\ReadMe.files\colorschememapping.xml" />
+    <None Include="Assets\Models\SD_Character\ReadMe.files\filelist.xml" />
+    <None Include="Assets\Models\SD_Character\ReadMe.files\item0006.xml" />
+    <None Include="Assets\Models\SD_Character\ReadMe.files\props007.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
