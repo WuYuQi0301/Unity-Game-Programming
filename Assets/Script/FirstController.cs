@@ -62,10 +62,12 @@ public class FirstController : MonoBehaviour, ISceneController, IUserAction {
         curStatus = GameStatus.Running;
 
     }
+
     public int GetScore()
     {
         return scoreManager.GetScore();
     }
+
     public void MovePlayer(float translationX, float translationZ)
     {
         if (curStatus == GameStatus.Running)

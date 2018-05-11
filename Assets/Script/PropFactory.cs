@@ -9,11 +9,9 @@ using UnityEngine;
  */
 public class PropFactory : MonoBehaviour {
     public GameObject PatrolPrefab;
-    public GameObject CrystallPrefab;
 
     private Vector3[] vec = new Vector3[4];
     public List<GameObject> used;
-    public List<GameObject> free;
     private void Awake()
     {
         PatrolPrefab = GameObject.Instantiate<GameObject>(Resources.Load<GameObject>("Prefabs/patrol")
