@@ -18,7 +18,6 @@ public class UserGUI : MonoBehaviour {
          * 表示调用接口函数时将选择这一对象的函数作为实现
          */
         action = SSDirector.getInstance().currentSceneController as IUserAction;
-        action.SetStatus(GameStatus.Ready);
     }
 
     // Update is called once per frame

@@ -62,17 +62,9 @@ public class FirstController : MonoBehaviour, ISceneController, IUserAction {
         curStatus = GameStatus.Running;
 
     }
-    public void Restart()
-    {
-
-    }
     public int GetScore()
     {
         return scoreManager.GetScore();
-    }
-    public void IncreaseScore()
-    {
-
     }
     public void MovePlayer(float translationX, float translationZ)
     {
